@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Wajiha Rasheed - Web Developer Portfolio" />
+    <meta
+      name="description"
+      content="Portfolio of Wajiha Rasheed showcasing web development skills, projects, and contact details."
+    />
+    <meta
+      name="keywords"
+      content="Wajiha Rasheed, Web Developer, MERN Stack, Portfolio, Projects"
+    />
+    <meta name="author" content="Shayan Asif" />
+
+    <!-- Open Graph (Facebook / LinkedIn Preview) -->
+    <meta property="og:title" content="Wajiha Rasheed - Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Checkout my portfolio showcasing skills and projects."
+    />
+    <meta property="og:image" content="assets/preview.png" />
+    <meta property="og:url" content="https://your-portfolio-url.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="google-site-verification"
+      content="6cXB7p9ae4YZXT_jgNXPBkfzTNPFwefGiQ15b1pLPa0"
+    />
+    <title>Wajiha - Developer Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Navbar sticky */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Body scroll disable jab navbar active ho */
+body.no-scroll {
+  overflow: hidden;
+}
+
+body {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  background-color: rgb(9, 9, 61);
+}
+
+.left {
+  width: 11%;
+  margin-left: 100px;
+  font-size: 2rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.left:hover {
+  color: lavender;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+.right li {
+  list-style: none;
+}
+
+.right li a {
+  text-decoration: none;
+  color: white;
+  margin: auto 3rem;
+}
+
+.right li a:hover {
+  color: lavender;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  margin-right: 20px;
+}
+
+/* Close button default hidden */
+.close-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  margin-right: 20px;
+}
+
+.firstSection {
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.firstSection > div {
+  width: 30%;
+}
+
+.leftSection {
+  font-size: 2rem;
+}
+
+.hireBtn {
+  margin-top: 25px;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background: blueviolet;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 1px 2px 15px blueviolet;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* ✅ Icon aur text ke beech spacing */
+  justify-content: center;
+}
+
+.hireBtn i {
+  font-size: 1.3rem;
+  color: #25d366; /* ✅ WhatsApp green */
+}
+
+.hireBtn:hover {
+  background: rgb(85, 28, 139);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 1px 2px 25px blueviolet;
+}
+
+.socialIcons {
+  margin-top: 20px;
+}
+
+.socialIcons a {
+  display: inline-block;
+  margin: 0 12px;
+  font-size: 1.6rem;
+  color: white;
+  transition: 0.3s ease;
+}
+
+/* Brand Colors */
+.socialIcons a.whatsapp:hover {
+  color: #25d366;
+  transform: scale(1.2);
+}
+
+.socialIcons a.github:hover {
+  color: #8a7f7f;
+  transform: scale(1.2);
+}
+
+.socialIcons a.linkedin:hover {
+  color: #0077b5;
+  transform: scale(1.2);
+}
+
+.rightSection img {
+  width: 90%;
+  border-radius: 50%;
+  border: 10px solid blueviolet;
+  box-shadow: 1px 2px 50px blueviolet;
+}
+
+.purple {
+  color: blueviolet;
+}
+
+#element {
+  color: blueviolet;
+}
+
+main hr {
+  border: 0;
+  height: 4px;
+  background: rgb(9, 9, 61);
+  margin: 50px 85px;
+}
+
+.gray {
+  color: gray;
+}
+
+/* ---------- Section 2: About Me ---------- */
+.secondSection {
+  padding: 0 10%;
+}
+
+.secondSection h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.secondSection h1::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #6c63ff;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.secondSectionDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.secondSectionDiv .leftSec {
+  flex: 1;
+  text-align: center;
+}
+
+.secondSectionDiv .leftSec img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 10px solid blueviolet;
+  box-shadow: 1px 2px 50px blueviolet;
+}
+
+.secondSectionDiv .rightSec {
+  flex: 2;
+}
+
+.secondSectionDiv .rightSec p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.secondSectionDiv .rightSec strong {
+  color: #6c63ff;
+}
+
+/* ---------- Section 3: Skills (with animation) ---------- */
+.thirdSection {
+  padding: 0 10% 3% 10%;
+  text-align: center;
+}
+
+.thirdSection h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.thirdSection h1::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 3px;
+  background: #6c63ff;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+/* Skills Grid */
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  margin-top: 80px;
+}
+
+/* Skill Card */
+.skillCard {
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 1px 2px 25px rgba(138, 43, 226, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: floatSkill 4s ease-in-out infinite;
+}
+
+/* Hover Effects */
+.skillCard:hover {
+  transform: translateY(-12px) scale(1.08);
+  box-shadow: 1px 2px 50px blueviolet;
+}
+
+/* Icon Styling */
+.skillCard i {
+  font-size: 3rem;
+  color: #6c63ff;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Icon Hover */
+.skillCard:hover i {
+  transform: rotate(360deg) scale(1.2);
+  color: #5848d6;
+}
+
+/* Text Styling */
+.skillCard p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Floating Animation */
+@keyframes floatSkill {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* ---------- Section 4: Work Experience (Projects) ---------- */
+.fourthSection {
+  padding: 0 10% 3% 10%;
+  text-align: center;
+}
+
+.gray {
+  font-size: 1rem;
+  color: gray;
+  display: block;
+}
+
+.fourthSection h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.fourthSection h1::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 3px;
+  background: #6c63ff;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.cardsSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 80px;
+}
+
+.card {
+  background: #fafafa;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 1px 2px 20px blueviolet;
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 1px 2px 30px blueviolet;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 4px solid blueviolet;
+}
+
+.card p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 15px 0;
+  color: #333;
+}
+
+.card button {
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.card button:hover {
+  background: #5848d6;
+}
+
+/* ---------- Section 5: Contact Me ---------- */
+.fifthSection {
+  padding: 0 10% 2% 10%;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.fifthSection h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.fifthSection h1::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background: #6c63ff;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+/* Contact Form Styling */
+.contactForm {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactForm input,
+.contactForm textarea,
+.contactForm button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  box-sizing: border-box; /* ✅ Fix for equal width */
+}
+
+/* Input & Textarea Styling */
+.contactForm input,
+.contactForm textarea {
+  background: #fafafa;
+  color: #333;
+  box-shadow: 1px 2px 15px blueviolet;
+  transition: 0.3s ease;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border: 2px solid blueviolet;
+  box-shadow: 1px 2px 25px blueviolet;
+}
+
+/* Button Styling */
+.contactForm button {
+  background: blueviolet;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+  box-shadow: 1px 2px 15px blueviolet;
+}
+
+.contactForm button:hover {
+  background: rgb(85, 28, 139);
+  transform: translateY(-3px);
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background: rgb(9, 9, 61);
+  color: white;
+  padding: 40px 10% 20px;
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Left Section */
+.footerLeft h2 {
+  color: blueviolet;
+  margin-bottom: 10px;
+}
+.footerLeft p {
+  font-size: 0.95rem;
+  color: gray;
+  line-height: 1.5;
+}
+
+/* Quick Links */
+.footerLinks h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: blueviolet;
+}
+.footerLinks ul {
+  list-style: none;
+}
+.footerLinks ul li {
+  margin: 8px 0;
+}
+.footerLinks ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+.footerLinks ul li a:hover {
+  color: blueviolet;
+}
+
+/* Social Icons */
+.footerSocial h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: blueviolet;
+}
+.socialIcons a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.socialIcons a.whatsapp:hover {
+  color: #25d366;
+  transform: scale(1.2);
+}
+
+.socialIcons a.github:hover {
+  color: #8a7f7f;
+  transform: scale(1.2);
+}
+
+.socialIcons a.linkedin:hover {
+  color: #0077b5;
+  transform: scale(1.2);
+}
+
+/* Bottom */
+.footerBottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 30px;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: gray;
+}
+
+/* -------------------- RESPONSIVE DESIGN -------------------- */
+/* ================================
+   Large Screens Responsive (>1024px)
+=================================== */
+@media (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+
+  nav {
+    padding: 0 8%;
+    height: 12vh;
+  }
+
+  .left {
+    width: auto;
+    margin-left: 0;
+    font-size: 2.5rem;
+    flex: 1;
+    text-align: left;
+  }
+
+  .right {
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    flex: 2;
+  }
+
+  .right li a {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .right li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: lavender;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  .firstSection {
+    height: 80vh;
+    margin: 80px 0;
+    padding: 0 10%;
+  }
+
+  .firstSection > div {
+    width: 40%;
+  }
+
+  .leftSection {
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+
+  .hireBtn {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+  }
+
+  .socialIcons a {
+    font-size: 2rem;
+  }
+
+  .rightSection img {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .secondSection h1,
+  .thirdSection h1,
+  .fourthSection h1,
+  .fifthSection h1 {
+    font-size: 3rem;
+  }
+
+  .secondSectionDiv {
+    gap: 60px;
+  }
+
+  .secondSectionDiv .leftSec img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .skillsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+  }
+
+  .cardsSection {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .contactForm {
+    max-width: 800px;
+  }
+
+  .footer {
+    padding: 60px 10% 30px;
+  }
+
+  .footerContainer {
+    gap: 80px;
+  }
+}
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  nav {
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  .left {
+    margin-left: 0;
+    width: auto;
+    font-size:
+  }
+
+  .right {
+    width: auto;
+    gap: 25px;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .right li a {
+    margin: 0 1rem; /* ✅ kam margin */
+  }
+
+  .firstSection > div {
+    width: 40%;
+  }
+
+  .rightSection img {
+    width: 80%;
+  }
+}
+
+/* Mobile Landscape & Small Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .close-toggle {
+    display: none; /* initially hidden */
+  }
+
+  .right.active ~ .close-toggle {
+    display: block;
+  }
+
+  nav {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .left {
+    margin-left: 0;
+    width: auto;
+  }
+
+  .hireBtn {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ✅ Navbar collapse */
+  .right {
+    border: 2px solid blueviolet;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    background: rgb(9, 9, 61);
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    display: none; /* by default hidden */
+    padding: 20px 0;
+  }
+
+  .right li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin: 10px;
+    /* ✅ Glassmorphism effect */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    /* ✅ Shadow for depth */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Hover effect */
+  .right li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Show menu when active */
+  .right.active {
+    display: flex;
+  }
+
+  /* Hero Section */
+  .firstSection {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .firstSection > div {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .rightSection img {
+    width: 70%;
+  }
+
+  /* About Section */
+  .secondSectionDiv {
+    flex-direction: column;
+  }
+
+  .secondSectionDiv .leftSec img {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+/* Small Mobiles (max-width: 480px) */
+@media (max-width: 480px) {
+  .left {
+    font-size: 1.5rem;
+  }
+
+  .menu-toggle {
+    font-size: 1.8rem;
+  }
+
+  .right li a {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+
+  .leftSection {
+    font-size: 1.5rem;
+  }
+
+  .hireBtn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .rightSection img {
+    width: 90%;
+   
+  }
+
+  .secondSection h1,
+  .thirdSection h1,
+  .fourthSection h1,
+  .fifthSection h1 {
+    font-size: 2rem;
+  }
+
+  .skillsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .card img {
+    height: 150px;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
+  .contactForm input,
+  .contactForm textarea,
+  .contactForm button {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+}
+    </style>
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Portfolio</div>
+
+        <!-- Hamburger Button -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <!-- Close Button (mobile ke liye) -->
+        <div class="close-toggle" id="close-toggle">✖</div>
+
+        <!-- Menu -->
+        <ul class="right" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Wajiha Rasheed</span>
+          <div>and I am a <span id="element"></span></div>
+
+          <!-- Hire Me Button -->
+          <a
+            href="https://wa.me/923437359186?text=Hi%20Wajiha,%20I%20want%20to%20hire%20you!"
+            target="_blank"
+          >
+            <button class="hireBtn">
+              <i class="fab fa-whatsapp"></i> Hire Me
+            </button>
+          </a>
+
+          <!-- Social Icons under button -->
+          <div class="socialIcons">
+            <a
+              href="https://wa.me/923437359186"
+              target="_blank"
+              class="whatsapp"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a
+              href="https://github.com/wajiha-lab/web-project"
+              target="_blank"
+              class="github"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.-29b046284"
+              target="_blank"
+              class="linkedin"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="rightSection">
+          <img src="Snapchat-158391427_1.jpg" alt="Image not found" />
+        </div>
+      </section>
+      <hr />
+
+      <section id="about" class="secondSection">
+        <h1>About Me</h1>
+        <div class="secondSectionDiv">
+          <div class="leftSec">
+            <img src="Snapchat-158391427_1.jpg" alt="Image not found" />
+          </div>
+          <div class="rightSec">
+            <p>
+              Hi, I’m Wajiha Rasheed, a passionate
+              <strong> Software Engineer </strong> who loves building clean,
+              responsive, and interactive websites.
+            </p>
+            <p>
+              I have strong skills in
+              <strong>C++, HTML5, CSS3, and JavaScript  </strong> for creating
+              the structure, design, and functionality of modern web pages. For
+              styling, I work with <strong> Bootstrap and Tailwind CSS</strong>,
+              and I enjoy adding smooth effects and animations with
+              <strong> CSS animations and JavaScript DOM manipulation.</strong>
+            </p>
+            <p>
+              I also have some  experience with <strong>React.js</strong> for building
+              dynamic user interfaces, along with
+               I make use of
+              <strong> Material UI and responsive layouts</strong> with
+              <strong>Flexbox & Grid.</strong>
+            </p>
+            <p>
+              My focus is to deliver user-friendly, fast, and mobile-first web
+              experiences while continuously learning advanced frontend tools
+              and frameworks.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <section id="skills" class="thirdSection">
+        <h1>Skills</h1>
+        <div class="skillsGrid">
+          <div class="skillCard">
+            <i class="fab fa-html5"></i>
+            <p>HTML</p>
+          </div>
+                              </div>
+          <div class="skillCard">
+            <i class="fab fa-css3-alt"></i>
+            <p>TailwindCSS</p>
+          </div>
+                    </div>
+          <div class="skillCard">
+            <i class="fab fa-css3-alt"></i>
+            <p>Reactjs</p>
+          </div>
+          <div class="skillCard">
+            <i class="fab fa-css3-alt"></i>
+            <p>CSS3</p>
+          </div>
+          <div class="skillCard">
+            <i class="fab fa-js"></i>
+            <p>JavaScript</p>
+          </div>
+
+       
+        </div>
+      </section>
+      <hr />
+
+      <section id="projects" class="fourthSection">
+        <span class="gray">What I have done so far</span>
+        <h1>Projects</h1>
+        <div class="cardsSection">
+<div class="card">
+            <img src="1122.png" alt="Image not found" />
+            <p>Weather App</p>
+            <button id="w_w_w_game">See</button>
+          </div>
+          <div class="card">
+            <img src="Screenshot 1.png" alt="Image not found" />
+            <p>Rock Paper Scissor Game</p>
+            <button id="r_p_s_game">See</button>
+          </div>
+          <div class="card">
+            <img src="Screenshot 2.png" alt="Image not found" />
+            <p>Tick Tac Toe Game</p>
+            <button id="t_t_t_game">See</button>
+          </div>
+          <div class="card">
+            <img src="Screenshot 3.png" alt="Image not found" />
+            <p>Currency Converter</p>
+            <button id="curr_con">See</button>
+          </div>
+          <div class="card">
+            <img src="Screenshot 4.png" alt="Image not found" />
+            <p>To Do List</p>
+            <button id="to_do_list">See</button>
+          </div>
+          <div class="card">
+            <img src="Screenshot 5.png" alt="Image not found" />
+            <p>calculator </p>
+            <button id="calculator">See</button>
+          </div>
+           <div class="card">
+            <img src="Screenshot 6.png" alt="Image not found" />
+            <p>To DO List</p>
+            <button id="e-commerence">See</button>
+          </div>
+          <div class="card">
+            <img src="sss.png" alt="Image not found" />
+            <p>Chat with wajiha</p>
+            <button id="gpt">See</button>
+          </div>
+                    <div class="card">
+            <img src="www.png" alt="Image not found" />
+            <p>Home project</p>
+            <button id="gpts">See</button>
+          </div>
+                    </div>
+
+        </div>
+      </section>
+      <hr />
+
+      <section id="contact" class="fifthSection">
+        <h1>Contact Me</h1>
+        <form
+          class="contactForm"
+          id="contactForm"
+          action="https://formspree.io/f/xkgqbbla"
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footerContainer">
+        <!-- Left Section -->
+        <div class="footerLeft">
+          <h2>Wajiha Portfolio</h2>
+          <p>Building clean and modern web experiences ✨</p>
+        </div>
+        <!-- Middle Section (Quick Links) -->
+        <div class="footerLinks">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Right Section (Social Icons) -->
+        <div class="footerSocial">
+          <h3>Connect with me</h3>
+          <div class="socialIcons">
+            <a
+              href="https://wa.me/923437359186"
+              target="_blank"
+              class="whatsapp"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a
+              href="https://github.com/wajiha-lab/web-project"
+              target="_blank"
+              class="github"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/wajiha-Rasheed-"
+              target="_blank"
+              class="linkedin"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom -->
+      <div class="footerBottom">
+        <p>© 2025 Wajiha Rasheed | All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src=""></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Software Engineer."],
+        typeSpeed: 50,
+        showCursor: false,
+
+      });
+      const menuToggle = document.querySelector(".menu-toggle");
+const closeToggle = document.querySelector(".close-toggle");
+const navRight = document.querySelector(".right");
+const w_w_w = document.getElementById("w_w_w_game");
+const r_p_s = document.getElementById("r_p_s_game");
+const t_t_t = document.getElementById("t_t_t_game");
+const curr_con = document.getElementById("curr_con");
+const todo = document.getElementById("to_do_list");
+const calc = document.getElementById("calculator");
+const ecomm = document.getElementById("e-commerence");
+const gpt = document.getElementById("gpt");
+const gpts = document.getElementById("gpts");
+const gptss = document.getElementById("gptss");
+
+// Open menu
+menuToggle.addEventListener("click", () => {
+  navRight.classList.add("active");
+  document.body.classList.add("no-scroll"); // disable scroll
+  closeToggle.style.display = "block"; // show close button
+  menuToggle.style.display = "none"; // hide hamburger
+});
+
+// Close menu
+closeToggle.addEventListener("click", () => {
+  navRight.classList.remove("active");
+  document.body.classList.remove("no-scroll"); // enable scroll
+  closeToggle.style.display = "none"; // hide close button
+  menuToggle.style.display = "block"; // show hamburger
+});
+
+// Jab koi link click ho to bhi menu close ho jaye
+document.querySelectorAll(".right li a").forEach(link => {
+  link.addEventListener("click", () => {
+    navRight.classList.remove("active");
+    document.body.classList.remove("no-scroll");
+    closeToggle.style.display = "none";
+    menuToggle.style.display = "block";
+  });
+});
+
+
+// Functions (button click → project link open)
+w_w_w.addEventListener("click", () => {
+  window.location.href = "https://wajiha-lab.github.io/Weather-app/";
+});
+r_p_s.addEventListener("click", () => {
+  window.location.href = "https://shayan4643.github.io/rock_paper_scissor_game";
+});
+
+t_t_t.addEventListener("click", () => {
+  window.location.href = "https://shayan4643.github.io/tic_tac_toe_game";
+});
+
+curr_con.addEventListener("click", () => {
+  window.location.href = "https://shayan4643.github.io/currency_converter";
+});
+
+todo.addEventListener("click", () => {
+  window.location.href = "https://shayan4643.github.io/todo_list_app/";
+});
+
+calc.addEventListener("click", () => {
+  window.location.href = "https://shayan4643.github.io/calculator";
+});
+
+  ecomm.addEventListener("click", () => {
+  window.location.href = "https://wajiha-lab.github.io/ecommerce/";
+});
+ gpt.addEventListener("click", () => {
+  window.location.href = "https://wajiha-lab.github.io/gpt/";
+});
+ gpts.addEventListener("click", () => {
+  window.location.href = "https://wajiha-lab.github.io/Home-project/";
+});
+
+
+
+
+    </script>
+  </body>
+</html>
